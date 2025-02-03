@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Рисовалка</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="palette">
+        <ul id="list">
+            <li class="colorPicker" id="red" data-color="#F00"></li>
+            <li class="colorPicker" id="magenta" data-color="#F0F"></li>
+            <li class="colorPicker" id="pink" data-color="#FFC0CB"></li>
+            <li class="colorPicker" id="purple" data-color="#800080"></li>
+            <li class="colorPicker" id="orange" data-color="#FFA500"></li>
+            <li class="colorPicker" id="yellow" data-color="#FF0"></li>
+            <li class="colorPicker" id="cyan" data-color="#0FF"></li>
+            <li class="colorPicker" id="blue" data-color="#00F"></li>
+            <li class="colorPicker" id="green" data-color="#0F0"></li>
+            <li class="colorPicker" id="black" data-color="#000"></li>
+        </ul>
+    </div>
+
+    <div id="brushСontrols">
+        <label for="brushSizeInput">Размер кисти:</label>
+        <input type="range" id="brushSizeInput" min="1" max="50" value="20">
+    </div>
+
+    <select id="brushShapeSelector">
+        <option value="square">Квадратная</option>
+        <option value="round">Круглая</option>
+      </select>
+
+    <canvas id="canvas" height="500px" width="500px"></canvas>
+
+    <script type="text/javascript" src="js1.js"></script>
+</body>
+</html>
